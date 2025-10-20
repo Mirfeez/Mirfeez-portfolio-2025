@@ -1,0 +1,566 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+
+}
+
+body {
+  overflow-x: hidden;
+  background-color: black;
+  color: white;
+}
+
+header {
+  margin-top: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 9%;
+  background-color: transparent;
+  filter: drop-shadow(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 3rem;
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.5s ease;
+
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  color: #00c3ff;
+  text-shadow: 0 0 5px #00c3ff;
+}
+
+nav a {
+  font-size: 1.8rem;
+  color: white;
+  margin-left: 4rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+  color: #00c3ff;
+  border-bottom: 3px solid #00c3ff;
+}
+
+
+section {
+  min-height: 100vh;
+  position: relative;
+}
+
+.home {
+  display: flex;
+  background-color: black;
+}
+
+.home .home-content h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+span {
+  color: #00c3ff;
+}
+
+.home-content h3 {
+  font-size: 4rem;
+  margin: bottom 1rem;
+  font-weight: 700;
+}
+
+.home-content p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.home-content {
+  z-index: 1;
+  margin: 10rem;
+  margin-top: 15rem;
+}
+
+.social-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background-color: transparent;
+  border: 0.2rem solid #00c3ff;
+  font-size: 2rem;
+  border-radius: 50%;
+  margin: 3rem 1.5rem 3rem 0;
+  transition: 0.5s ease;
+  color: #00c3ff;
+}
+
+.social-icons a:hover {
+  color: black;
+  transform: scale(1.3);
+  background-color: #00c3ff;
+  box-shadow: 0 0 25px #00c3ff;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background-color: transparent;
+  border-radius: 4rem;
+  font-size: 1.6rem;
+  color: #00c3ff;
+  letter-spacing: spacing 0.3rem;
+  font-weight: 600;
+  border: 2px solid #00c3ff;
+  transition: 0.3s ease;
+  cursor: pointer;
+  width: 27rem;
+  text-align: center;
+  transition: box-shadow 1.3s ease, background-color 1.3s ease, color 1.3s ease;
+}
+
+
+
+.btn:hover {
+  transform: scale3d(1.03);
+  background-color: #00c3ff;
+  color: black;
+  box-shadow: 0 0 25px #00c3ff;
+}
+
+.typing-text {
+  font-size: 34px;
+  font-weight: 600;
+  min-width: 280px;
+
+}
+
+.typing-text span {
+  position: relative;
+}
+
+.typing-text span::before {
+  content: "Software Developer";
+  color: #00c3ff;
+  animation: words 20s  infinite;
+}
+
+.typing-text span::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  border-left: 3px solid black;
+  right: -8;
+  animation: cursor 0.6 infinite;
+}
+
+@keyframes cursor {
+  to {
+    border-left: 3px solid #00c3ff;
+  }
+}
+
+@keyframes words {
+
+  0%,
+  20% {
+    content: "Web Developer and Learner"
+  }
+
+  21%,
+  40% {
+    content: "Software Developer and Learner"
+  }
+
+  41%,
+  60% {
+    content: "Web Designer and Learner"
+  }
+
+  61%,
+  80% {
+    content: "Data Analyst"
+  }
+
+  81%,
+  100% {
+    content: "Advanced Excel User"
+  }
+}
+
+
+.home .home-content h3 {
+  font-size: 2.5rem;
+}
+
+.home-content h1 {
+  font-size: 5rem;
+}
+
+/* from here i done the editing */
+
+.home-content .myNameInPara {
+  font-size: 3rem;
+}
+
+.summary {
+  margin-top: 5rem;
+  border-bottom: 5px solid #00c3ff;
+  padding-bottom: 1.5rem;
+}
+
+.social-icons .fa-linkedin {
+  color: rgb(0, 60, 255);
+}
+
+.social-icons .fa-facebook {
+  color: rgb(0, 106, 255);
+}
+
+.social-icons .fa-whatsapp {
+  color: rgb(21, 255, 0);
+}
+
+.social-icons .fa-github {
+  color: white;
+}
+
+.social-icons .fa-instagram {
+  color: rgb(255, 0, 166);
+}
+
+/* hover  */
+.social-icons .fa-linkedin:hover {
+  color: rgb(0, 60, 255);
+}
+
+.social-icons .fa-facebook:hover {
+  color: rgb(0, 106, 255);
+}
+
+.social-icons .fa-whatsapp:hover {
+  color: rgb(21, 255, 0);
+}
+
+.social-icons .fa-github:hover {
+  color: white;
+}
+
+.social-icons .fa-instagram:hover {
+  color: rgb(255, 0, 166);
+}
+
+/* animation */
+.social-icons .brands {
+  animation: pop 3s ease-in-out;
+}
+
+@keyframes pop {
+  0% {
+    transform: translateY(0);
+  }
+
+  30% {
+    transform: translateY(-25px);
+    background-color: #00c3ff;
+    color: black;
+    box-shadow: 0 0 24px #00c3ff;
+  }
+
+  60% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.brands:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.brands:nth-child(3) {
+  animation-delay: 0.7s;
+}
+
+.brands:nth-child(4) {
+  animation-delay: 0.9s;
+}
+
+.brands:nth-child(5) {
+  animation-delay: 1.1s;
+}
+
+.brands:nth-child(6) {
+  animation-delay: 1.3s;
+}
+
+.btn {
+  animation: tiri 3s ease-in-out normal backwards;
+}
+
+
+@keyframes tiri {
+  0% {
+    transform: rotate(0);
+  }
+
+  30% {
+    transform: rotate(5deg);
+    background-color: #00c3ff;
+    color: black;
+    box-shadow: 0 0 24px #00c3ff;
+  }
+
+  50% {
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+
+
+/* page2 */
+
+
+.resume-section {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.resume-section .letter {
+  display: inline-block;
+  animation: jump 1.5s ease-in-out infinite;
+}
+
+/* jumping keyframs */
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+
+  30% {
+    transform: translateY(-15px);
+    color: white;
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* delay each letter */
+.resume-section .letter:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.resume-section .letter:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.resume-section .letter:nth-child(4) {
+  animation-delay: 0.5s;
+}
+
+.resume-section .letter:nth-child(5) {
+  animation-delay: 0.7s;
+}
+
+.resume-section .letter:nth-child(6) {
+  animation-delay: 0.9s;
+}
+
+.resume-section .letter:nth-child(7) {
+  animation-delay: 1.1s;
+}
+
+.container .viewButton {
+  display: flex;
+  justify-self: center;
+  background-color: transparent;
+  cursor: pointer;
+  border: 0.15rem solid #00c3ff;
+  font-size: 2rem;
+  padding: 1rem;
+  width: 19rem;
+  justify-content: center;
+  border-radius: 1rem;
+  margin-top: 3rem;
+  color: #00c3ff;
+  transition: box-shadow 1.3s ease, background-color 1.3s ease, color 1.3s ease;
+}
+
+.container {
+  height: 25vh;
+}
+
+.container .viewButton:hover {
+  transform: scale3d(1.03);
+  background-color: #00c3ff;
+  color: black;
+  box-shadow: 0 0 25px #00c3ff;
+}
+
+
+@media(max-width:1000px) {
+  nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 12%;
+    height: 100vh;
+    border-bottom-left-radius: 2rem;
+    padding: 1rem solid;
+    background-color: transparent;
+    border-top: 0.1rem solid rgb(0, 0, 0, 1);
+  }
+
+  nav.active {
+    display: block;
+  }
+
+  nav a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+  }
+
+  nav a:hover,
+  nav a.active {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border-bottom: 0.5rem solid #00c3ff;
+  }
+}
+
+@media (max-width:1100px) {
+  .home {
+    display: block;
+    margin-left: -4rem;
+  }
+
+  .img {
+    width: 50rem;
+    justify-self: center;
+    margin-right: -2rem;
+  }
+}
+
+@media (max-width:485px) {
+
+  .img,
+  .img img {
+    width: 20rem;
+    height: 20rem;
+    justify-content: center;
+  }
+
+  .container {
+    justify-self: center;
+  }
+}
+
+
+@media (max-width:1368px) {
+  .img {
+    margin-top: 13rem;
+  }
+}
+
+@media (max-width:1118px) {
+  .img {
+    margin-top: 20rem;
+  }
+}
+
+
+footer {
+  height: 50vh;
+  width: 100%;
+  background-color: black;
+  box-shadow: 0 0 25px #00c3ff;
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+
+footer h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.location,
+.phone,
+.email,
+.footerName {
+  margin-bottom: 2rem;
+}
+
+
+/* img transition */
+
+.img {
+  border-radius: 50%;
+  align-content: center;
+  justify-content: center;
+  height: 50rem;
+  margin-top: 12rem;
+  margin-right: 7rem;
+  transition: box-shadow 1.3s ease 0s;
+  transition:transform 3.5s ease-in-out ;
+  animation: bounce 1s ease-out;
+}
+
+@keyframes bounce {
+  to{
+    transform: translateY(-30vh);
+  }
+}
+
+.img img {
+  height: 50rem;
+}
+
+.img:hover {
+  box-shadow: 0 0 25px #00c3ff;
+  transform: rotate(36000deg);
+}
+
+.hover-h3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(270deg);
+}
+
+/* img animation */

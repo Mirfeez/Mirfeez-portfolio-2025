@@ -1,0 +1,322 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: black;
+  color: white;
+}
+
+header {
+  margin-top: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 9%;
+  background-color: transparent;
+  filter: drop-shadow(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+
+.logo {
+  font-size: 3rem;
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.5s ease;
+
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  color: #00c3ff;
+  text-shadow: 0 0 5px #00c3ff;
+}
+
+nav a {
+  font-size: 1.8rem;
+  color: white;
+  margin-left: 4rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+  color: #00c3ff;
+  border-bottom: 3px solid #00c3ff;
+}
+
+/* copied till here... */
+
+section {
+  position: relative;
+}
+
+.education {
+  display: flex;
+}
+
+/* education */
+.ug,
+.puc,
+.school {
+  display: flex;
+  border-radius: 4rem;
+  border-left: 4px solid #00c3ff;
+}
+
+/* all texts here*/
+h2 {
+  color: #00c3ff;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  color: #00c3ff;
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+.ug-text,
+.puc-text,
+.school-text {
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.ug,
+.puc,
+.school {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem;
+  width: 100vw;
+  height: 50%;
+  animation: slide 1s ease-out;
+}
+
+
+@keyframes slide {
+
+  from{
+    transform: translateX(100vw);
+  }
+}
+
+
+h1 {
+  font-size: 3rem;
+  color: #00c3ff;
+}
+
+.ug h2,
+.puc h2,
+.school h2 {
+  font-size: 3rem;
+}
+
+.ug h3,
+.puc h3,
+.school h3 {
+  font-size: 3rem;
+}
+
+.ug h4,
+.puc h4,
+.school h4 {
+  font-size: 2rem;
+}
+
+.ug h5,
+.puc h5,
+.school h5 {
+  font-size: 1rem;
+}
+
+.container {
+  justify-self: center;
+  text-align: center;
+  width: 100%;
+}
+
+.markscard {
+  padding: 3rem;
+}
+
+
+
+/* button section  */
+.markscard button {
+  justify-self: center;
+  width: 15rem;
+  height: 5rem;
+  background-color: transparent;
+}
+
+button {
+  width: 155px;
+  height: 50px;
+  color: white;
+  background-color: black;
+  border: 3px solid #00c3ff;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #00c3ff;
+  box-shadow: 0 0 25px #00c3ff;
+  color: transparent;
+  transition: box-shadow 1.3s ease, background-color 1.3s ease, color 0.5s ease;
+}
+
+/* skills section  */
+
+section {
+  padding: 5rem 9% 5rem;
+  position: relative;
+}
+
+/* copied till here... */
+
+.skills {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  border: 5px solid #00c3ff;
+  border-radius: 1rem;
+  position: relative;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+
+
+
+.skills-section h2 {
+  color: #00c3ff;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.skills-section h3 {
+  font-size: 3rem;
+}
+
+.skills-section h4 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 2.5rem;
+}
+
+.skills-section h5 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+
+ul {
+  margin: 1.5rem;
+}
+
+li {
+  margin: 1rem;
+  font-size: 1.6rem;
+}
+
+
+
+.text {
+  margin: 3rem;
+}
+
+
+
+
+button {
+  padding: 1.5rem;
+  width: 16rem;
+  background-color: black;
+  border: 3px solid #00c3ff;
+  color: white;
+  border-radius: 3rem;
+  margin: 2rem;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+
+button:hover {
+  background-color: #00c3ff;
+  color: black;
+  box-shadow: 0 0 24px #00c3ff;
+}
+
+.img {
+  width: 50rem;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.about-text p{
+  font-size: 1.5rem;
+  font-family: monospace;
+}
+
+.about-text{
+  width: 90%;
+  margin-top: 5rem;
+  display: block;
+  justify-content: start;
+}
+
+.about span{
+  font-size: 4rem;
+  color: #00c3ff;
+  font-family: serif;
+}
+
+.about-img img{
+  width:100vw;
+  height: 120vh;
+  filter: brightness(0.4);
+  position: absolute;
+}
+img{
+  box-shadow: 0 0 25px #00c3ff;
+}
