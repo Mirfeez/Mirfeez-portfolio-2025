@@ -178,26 +178,30 @@ span {
 
 @keyframes words {
   0%,
-  20% {
+  15% {
     content: "Web Developer and Learner";
   }
 
-  21%,
-  40% {
-    content: "Software Developer and Learner";
-  }
-
-  41%,
-  60% {
+  16%,
+  23% {
     content: "Web Designer and Learner";
   }
 
-  61%,
-  80% {
-    content: "Data Analyst";
+  31%,
+  45% {
+    content: "Advanced Excel User";
+  }
+  46%,
+  60% {
+    content: "Web Developer and Learner";
   }
 
-  81%,
+  61%,
+  75% {
+    content: "Web Designer and Learner";
+  }
+
+  76%,
   100% {
     content: "Advanced Excel User";
   }
@@ -403,7 +407,7 @@ span {
   font-size: 2rem;
   padding: 1rem;
   width: 10rem;
-  margin-left:  1rem;
+  margin-left: -0.5rem;
   justify-content: center;
   border-radius: 1rem;
   margin-top: 3rem;
@@ -415,8 +419,7 @@ span {
   height: 25vh;
 }
 
-.container .viewButton:hover,
-.downloadbtn:hover {
+.container .viewButton:hover {
   transform: scale3d(1.03);
   background-color: #00c3ff;
   color: black;
@@ -489,7 +492,9 @@ footer h1 {
   margin-bottom: 2rem;
 }
 
-.buttons{
-  display: flex;
-  justify-self: center;
+img {
+  border-radius: 50%;
+  width: 22vw;
+  height: 50vh;
+  clip-path: path();
 }
