@@ -450,7 +450,7 @@ footer h1 {
 }
 
 .home img {
-  border-radius: 20%;
+  border-radius: 50%;
   width: 320px;
   height: 320px;
   object-fit: cover; /* ensures proper scaling */

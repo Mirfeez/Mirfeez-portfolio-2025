@@ -320,3 +320,7 @@ button:hover {
 img{
   box-shadow: 0 0 25px #00c3ff;
 }
+
+h1{
+  margin-left: 2em;
+}
