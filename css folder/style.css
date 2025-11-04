@@ -66,11 +66,6 @@ section {
   position: relative;
 }
 
-.home {
-  display: flex;
-  background-color: black;
-}
-
 .home .home-content h1 {
   font-size: 5rem;
   font-weight: 700;
@@ -95,7 +90,6 @@ span {
 .home-content {
   z-index: 1;
   margin: 10rem;
-  margin-top: 15rem;
 }
 
 .social-icons a {
@@ -397,8 +391,7 @@ span {
   animation-delay: 1.1s;
 }
 
-.container .viewButton,
-.downloadbtn {
+.container .viewButton {
   display: flex;
   justify-self: center;
   background-color: transparent;
@@ -426,50 +419,6 @@ span {
   box-shadow: 0 0 25px #00c3ff;
 }
 
-@media (max-width: 1000px) {
-  nav {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 12%;
-    height: 100vh;
-    border-bottom-left-radius: 2rem;
-    padding: 1rem solid;
-    background-color: transparent;
-    border-top: 0.1rem solid rgb(0, 0, 0, 1);
-  }
-
-  nav.active {
-    display: block;
-  }
-
-  nav a {
-    display: block;
-    font-size: 2rem;
-    margin: 3rem 0;
-  }
-
-  nav a:hover,
-  nav a.active {
-    padding: 1rem;
-    border-radius: 0.5rem;
-    border-bottom: 0.5rem solid #00c3ff;
-  }
-}
-
-@media (max-width: 1100px) {
-  .home {
-    display: block;
-    margin-left: -4rem;
-  }
-}
-
-@media (max-width: 485px) {
-  .container {
-    justify-self: center;
-  }
-}
-
 footer {
   height: 50vh;
   width: 100%;
@@ -492,8 +441,117 @@ footer h1 {
   margin-bottom: 2rem;
 }
 
-img {
-  border-radius: 50%;
-  width: 22vw;
-  height: 50vh;
+.home {
+  display: flex;
+  align-items: center; /* vertically centers image + text */
+  justify-content: center; /* horizontally centers them */
+  background-color: black;
+  padding-left: 5rem;
+}
+
+.home img {
+  border-radius: 20%;
+  width: 320px;
+  height: 320px;
+  object-fit: cover; /* ensures proper scaling */
+  transition: transform 0.4s ease;
+  transition: all 1s ease-in-out;
+}
+
+.home img:hover {
+  transform: scale(1.05); /* little hover zoom */
+  box-shadow: 0 0 25px #00c3ff; /* subtle glowing border */
+}
+
+.nav-container {
+  padding-left: 35px;
+}
+
+@media (max-width: 1090px) {
+  .home .home-content {
+    font-size: 2rem;
+    margin: 50px;
+  }
+
+  .home-content h1.h1:not(span) {
+    font-size: 4rem;
+  }
+  .home-content .myNameInPara {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .home-content h1.h1:not(span) {
+    font-size: 3rem;
+  }
+  .home .home-content {
+    margin-top: 75px;
+  }
+  .home-content span {
+    font-size: 3rem;
+  }
+  .nav-container {
+    width: 100vw;
+  }
+  .home-content p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 960px) {
+  body {
+    width: 100%;
+  }
+  .home-content h1.h1:not(span) {
+    font-size: 2.5rem;
+  }
+
+  .home-content span {
+    font-size: 2.5rem;
+  }
+
+  .home .home-content {
+    margin-top: 95px;
+    margin-left: 5rem;
+  }
+
+  .home-content p {
+    font-size: 1.1rem;
+  }
+  .home {
+    display: block;
+    padding-left: 1rem;
+  }
+
+  .home img {
+    width: 200px;
+    height: 200px;
+    margin: 5rem;
+    justify-self: center;
+    float: right;
+  }
+  .logo {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 660px) {
+  .social-icons a {
+    font-size: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+  }
+  .btn {
+    width: 23rem;
+    margin: 0;
+  }
+  .home .home-content .summary{
+    margin-top: 3rem;
+  }
+}
+@media (max-width: 485px) {
+  .container {
+    justify-self: center;
+  }
 }
