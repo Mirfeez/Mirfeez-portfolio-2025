@@ -9,7 +9,8 @@
 
 html {
   font-size: 62.5%;
-
+  width: 100vw;
+  height: 100vh;
 }
 
 body {
@@ -35,14 +36,12 @@ header {
   z-index: 100;
 }
 
-
 .logo {
   font-size: 3rem;
   color: white;
   font-weight: 800;
   cursor: pointer;
   transition: 0.5s ease;
-
 }
 
 .logo:hover {
@@ -72,9 +71,7 @@ section {
   position: relative;
 }
 
-.education {
-  display: flex;
-}
+
 
 /* education */
 .ug,
@@ -82,7 +79,7 @@ section {
 .school {
   display: flex;
   border-radius: 4rem;
-  border-left: 4px solid #00c3ff;
+  border-top: 4px solid #00c3ff;
 }
 
 /* all texts here*/
@@ -127,14 +124,11 @@ h5 {
   animation: slide 1s ease-out;
 }
 
-
 @keyframes slide {
-
-  from{
+  from {
     transform: translateX(100vw);
   }
 }
-
 
 h1 {
   font-size: 3rem;
@@ -175,8 +169,6 @@ h1 {
   padding: 3rem;
 }
 
-
-
 /* button section  */
 .markscard button {
   justify-self: center;
@@ -214,18 +206,19 @@ section {
 
 .skills {
   margin-top: 2rem;
-  display: flex;
-  justify-content: space-between;
+  justify-content: center;
   border: 5px solid #00c3ff;
   border-radius: 1rem;
   position: relative;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   margin-bottom: 2rem;
 }
 
-
-
+.skills-section{
+  width: 100vw;
+  float: auto;
+}
 
 .skills-section h2 {
   color: #00c3ff;
@@ -258,14 +251,9 @@ li {
   font-size: 1.6rem;
 }
 
-
-
 .text {
   margin: 3rem;
 }
-
-
-
 
 button {
   padding: 1.5rem;
@@ -293,34 +281,129 @@ button:hover {
   justify-content: center;
 }
 
-.about-text p{
+.about-text p {
   font-size: 1.5rem;
   font-family: monospace;
 }
 
-.about-text{
+.about-text {
   width: 90%;
   margin-top: 5rem;
   display: block;
   justify-content: start;
 }
 
-.about span{
+.about span {
   font-size: 4rem;
   color: #00c3ff;
   font-family: serif;
 }
 
-.about-img img{
-  width:100vw;
-  height: 120vh;
-  filter: brightness(0.4);
-  position: absolute;
-}
-img{
+img {
   box-shadow: 0 0 25px #00c3ff;
 }
 
-h1{
+h1 {
   margin-left: 2em;
 }
+
+.lordIcon {
+  width: 250px;
+  height: 250px;
+}
+
+
+
+/* ===================== RESPONSIVE DESIGN ===================== */
+
+/* Large Tablets & Small Laptops */
+@media (max-width: 1200px) {
+  html { font-size: 56%; }
+  header { padding: 1rem 5%; }
+  .skills, .ug, .puc, .school { width: 100%; }
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+  html { font-size: 50%; }
+
+  nav a {
+    margin-left: 2rem;
+  }
+
+  .skills, .ug, .puc, .school {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 2rem;
+  }
+
+  .img {
+    width: 30rem;
+  }
+}
+
+/* Mobile Navigation & Layout */
+@media (max-width: 700px) {
+
+  header {
+    padding: 1rem 4%;
+  }
+
+  /* Show a menu icon (we will add later if needed) */
+  .logo {
+    font-size: 2.4rem;
+  }
+
+  .about-text {
+    width: 100%;
+    margin-top: 8rem;
+  }
+
+  .about-text p {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+
+  .skills {
+    flex-direction: column;
+  }
+
+  .img {
+    width: 25rem;
+  }
+}
+
+/* Small Mobile Screens */
+@media (max-width: 480px) {
+  html { font-size: 45%; }
+
+  .logo {
+    font-size: 2rem;
+  }
+
+  h1, h2, h3, h4 {
+    text-align: center;
+  }
+
+  .skills, .ug, .puc, .school {
+    padding: 2rem 1rem;
+  }
+
+  .img {
+    width: 20rem;
+  }
+
+  .markscard button,
+  button {
+    width: 12rem;
+    height: 4rem;
+    font-size: 1.4rem;
+  }
+}
+
+/* Ultra Small  */
+@media (max-width: 350px) {
+  html { font-size: 40%; }
+  .logo { font-size: 1.6rem; }
+}
+
