@@ -112,4 +112,25 @@ h3 {
   font-size: 2.5rem;
 }
 
+/* ===================== RESPONSIVE DESIGN ===================== */
 
+/* Tablets */
+@media (max-width: 900px) {
+  html {
+    font-size: 55%;
+  }
+  iframe {
+    width: 80vw;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  section h1 {
+    text-align: center;
+  }
+  iframe {
+    width: 90vw;
+    height: 50vh;
+  }
+}

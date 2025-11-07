@@ -9,13 +9,10 @@
 
 html {
   font-size: 62.5%;
-  width: 100vw;
-  height: 100vh;
 }
 
 body {
   width: 100%;
-  height: 100vh;
   overflow-x: hidden;
   background-color: black;
   color: white;
@@ -70,8 +67,6 @@ nav a.active {
 section {
   position: relative;
 }
-
-
 
 /* education */
 .ug,
@@ -163,6 +158,9 @@ h1 {
   justify-self: center;
   text-align: center;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .markscard {
@@ -211,11 +209,13 @@ section {
   border-radius: 1rem;
   position: relative;
   align-items: center;
+  display: flex;
+  justify-content: space-between;
   width: 100vw;
   margin-bottom: 2rem;
 }
 
-.skills-section{
+.skills-section {
   width: 100vw;
   float: auto;
 }
@@ -312,29 +312,47 @@ h1 {
   height: 250px;
 }
 
-
-
 /* ===================== RESPONSIVE DESIGN ===================== */
 
 /* Large Tablets & Small Laptops */
 @media (max-width: 1200px) {
-  html { font-size: 56%; }
-  header { padding: 1rem 5%; }
-  .skills, .ug, .puc, .school { width: 100%; }
+  html {
+    font-size: 56%;
+  }
+  header {
+    padding: 1rem 5%;
+  }
+  .skills,
+  .ug,
+  .puc,
+  .school {
+    width: 100%;
+  }
 }
 
 /* Tablets */
 @media (max-width: 900px) {
-  html { font-size: 50%; }
+  html {
+    font-size: 50%;
+  }
 
   nav a {
     margin-left: 2rem;
   }
 
-  .skills, .ug, .puc, .school {
+  .skills,
+  .ug,
+  .puc,
+  .school {
     flex-direction: column;
     text-align: center;
     padding: 3rem 2rem;
+  }
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
   }
 
   .img {
@@ -344,7 +362,6 @@ h1 {
 
 /* Mobile Navigation & Layout */
 @media (max-width: 700px) {
-
   header {
     padding: 1rem 4%;
   }
@@ -375,17 +392,30 @@ h1 {
 
 /* Small Mobile Screens */
 @media (max-width: 480px) {
-  html { font-size: 45%; }
+  html {
+    font-size: 45%;
+  }
 
   .logo {
     font-size: 2rem;
   }
 
-  h1, h2, h3, h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     text-align: center;
   }
 
-  .skills, .ug, .puc, .school {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills,
+  .ug,
+  .puc,
+  .school {
     padding: 2rem 1rem;
   }
 
@@ -403,7 +433,10 @@ h1 {
 
 /* Ultra Small  */
 @media (max-width: 350px) {
-  html { font-size: 40%; }
-  .logo { font-size: 1.6rem; }
+  html {
+    font-size: 40%;
+  }
+  .logo {
+    font-size: 1.6rem;
+  }
 }
-

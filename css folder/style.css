@@ -121,14 +121,14 @@ span {
   border-radius: 4rem;
   font-size: 1.6rem;
   color: #00c3ff;
-  letter-spacing: spacing 0.3rem;
+  letter-spacing: 0.3rem;
   font-weight: 600;
   border: 2px solid #00c3ff;
-  transition: 0.3s ease;
   cursor: pointer;
   width: 27rem;
   text-align: center;
-  transition: box-shadow 1.3s ease, background-color 1.3s ease, color 1.3s ease;
+  transition: transform 0.3s ease, box-shadow 1.3s ease,
+    background-color 1.3s ease, color 1.3s ease;
 }
 
 .btn:hover {
@@ -612,14 +612,15 @@ footer h1 {
     margin: 3rem 3px 10px 5px;
   }
   .btn {
-    height: 1rem;
-    padding: 7px 0 2rem;
-  }  
-  .home{
+    height: auto;
+    padding: 0.8rem 1rem;
+    line-height: 1;
+  }
+  .home {
     display: block;
   }
 
-  .home img{
+  .home img {
     width: 100px;
     height: 100px;
     margin: 6rem;
@@ -627,32 +628,32 @@ footer h1 {
     justify-self: center;
   }
 
-  .footerName{
+  .footerName {
     font-size: 1rem;
   }
 
-  address{
+  address {
     font-size: 1rem;
   }
 }
 
 @media (max-width: 448px) {
-  .home img{
+  .home img {
     margin: 4rem;
   }
 
-  .home .home-content{
+  .home .home-content {
     margin: 0 3rem 0 4rem;
   }
 
-  img.pic{
+  img.pic {
     margin-top: 8rem;
   }
-  nav a{
+  nav a {
     font-size: 0.8rem;
   }
 
-  .logo{
+  .logo {
     font-size: 1.3rem;
   }
 }
