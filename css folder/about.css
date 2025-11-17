@@ -114,7 +114,7 @@ h5 {
   align-items: center;
   padding: 1rem;
   margin: 1rem;
-  width: 100vw;
+  width: 80vw;
   height: 50%;
   animation: slide 1s ease-out;
 }
@@ -154,13 +154,13 @@ h1 {
   font-size: 1rem;
 }
 
-.container {
+.container{
   justify-self: center;
   text-align: center;
   width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .markscard {
@@ -319,9 +319,11 @@ h1 {
   html {
     font-size: 56%;
   }
+
   header {
     padding: 1rem 5%;
   }
+
   .skills,
   .ug,
   .puc,
@@ -348,6 +350,7 @@ h1 {
     text-align: center;
     padding: 3rem 2rem;
   }
+
   .container {
     flex-direction: row;
     justify-content: space-between;
@@ -436,6 +439,7 @@ h1 {
   html {
     font-size: 40%;
   }
+
   .logo {
     font-size: 1.6rem;
   }
